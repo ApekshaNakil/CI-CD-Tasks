@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/helloServlet")
+@WebServlet("/hi")
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -31,7 +31,7 @@ public class HelloServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String yourName = request.getParameter("yourName");
 		PrintWriter writer = response.getWriter();
-		writer.println("<h1>Hello " + yourName + "</h1>");
+		writer.println("<h1>Hi " + yourName + "</h1>");
 		writer.close();
 	}
 
